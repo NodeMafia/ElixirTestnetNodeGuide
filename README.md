@@ -1,5 +1,7 @@
 # Elixir TestNet (v3.4.0)
+
 ![image](https://github.com/user-attachments/assets/dc422a87-feb7-444c-a23c-e2fa23f5358c)
+
 ## Elixir — a decentralised modular network designed to provide liquidity on decentralised order book (DEX) based exchanges.
 $17,600,000 investment from Arthur Hayes, Maelstrom, Amber Group, etc. Node requirements are 4CPU/8RAM/100SSD 
 
@@ -12,6 +14,7 @@ The platform allows us to mint us 1,000 MOCKs on the Sepolia network. MOCKs can 
 Before running Node, add Sepolia network to your wallet and get test SepoliETH here https://cloud.google.com/application/web3/faucet/ethereum/sepolia.
 
 Go to https://testnet-3.elixir.xyz/, log in with your wallet and mint 1000 MOCKs. Then choose the maximum number of MOCKs in the menu below and click on APPROVE MOCK FOR STAKING. After staking, click on CUSTOM VALIDATOR below and enter the address for your newly created node wallet. Click DELEGATE.
+
 ![image](https://github.com/user-attachments/assets/29eddbdd-aa47-4087-8514-2e1539abae27)
 
 ## Node installation
