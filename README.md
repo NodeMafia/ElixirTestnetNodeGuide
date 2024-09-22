@@ -1,4 +1,4 @@
-# Elixir TestNet (v3.4.2*updated)
+# Elixir TestNet (v3.4.6*updated)
 
 ![image](https://github.com/user-attachments/assets/dc422a87-feb7-444c-a23c-e2fa23f5358c)
 
@@ -19,18 +19,31 @@ Go to https://testnet-3.elixir.xyz/, log in with your wallet and mint 1000 MOCKs
 
 ## Node installation
 
+All commands below can be replaced by our installer. To do this, copy this command and follow the instructions.
+
+```
+curl -s https://raw.githubusercontent.com/NodeMafia/ElixirTestnetNodeGuide/refs/heads/main/ElixirSetup.sh | sh
+```
+
+
 You connect to your server and test Docker. If it doesn't exist, install Docker
 
-```docker -version```
+```
+docker -version
+```
 
 Create a directory and navigate to it with the command
 
-```mkdir ElixirNode && cd ElixirNode```
+```
+mkdir ElixirNode && cd ElixirNode
+```
 
 Before performing the following steps you will need the private key of your new wallet, the address of which we wrote in CUSTOM VALIDATOR!
 Create node configuration file (we need nano)
 
-```nano validator.env```
+```
+nano validator.env
+```
 
 In the configuration file insert with replacement data without <>
 ```
@@ -44,11 +57,15 @@ SIGNER_PRIVATE_KEY=<NEW_WALLET_PRIVATE_KEY>
 To save the configuration press CTRL+X, Y, Enter. 
 Install image Elixir node.
 
-```docker pull elixirprotocol/validator:v3 --platform linux/amd64```
+```
+docker pull elixirprotocol/validator:v3 --platform linux/amd64
+```
 
 Start the node
 
-```docker run --env-file ./validator.env --platform linux/amd64 -p 17690:17690 elixirprotocol/validator:v3```
+```
+docker run --env-file ./validator.env --platform linux/amd64 -p 17690:17690 elixirprotocol/validator:v3
+```
 
 If you see NO CONFIGURATION ERRORS FOUND, then everything is successful.
 Now you can see your uptime on the testnet site. 
