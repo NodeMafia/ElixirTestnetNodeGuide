@@ -22,7 +22,7 @@ Go to https://testnet-3.elixir.xyz/, log in with your wallet and mint 1000 MOCKs
 All commands below can be replaced by our installer. To do this, copy this command and follow the instructions.
 
 ```
-curl -s https://raw.githubusercontent.com/NodeMafia/ElixirTestnetNodeGuide/refs/heads/main/ElixirSetup.sh | sh
+curl -s https://raw.githubusercontent.com/NodeMafia/ElixirTestnetNodeGuide/refs/heads/main/ElixirSetup.sh | bash
 ```
 
 
