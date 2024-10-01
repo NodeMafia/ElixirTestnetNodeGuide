@@ -1,4 +1,4 @@
-# Elixir TestNet (v3.4.6*updated)
+# Elixir TestNet (v3.4.8*updated)
 
 ![image](https://github.com/user-attachments/assets/dc422a87-feb7-444c-a23c-e2fa23f5358c)
 
