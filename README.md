@@ -18,7 +18,7 @@ Go to https://testnet-3.elixir.xyz/, log in with your wallet and mint 1000 MOCKs
 
 ![image](https://github.com/user-attachments/assets/29eddbdd-aa47-4087-8514-2e1539abae27)
 
-## Node installation
+## Testnet Node installation
 
 All commands below can be replaced by our installer. To do this, copy this command and follow the instructions.
 
@@ -59,19 +59,72 @@ To save the configuration press CTRL+X, Y, Enter.
 Install image Elixir node.
 
 ```
-docker pull elixirprotocol/validator:v3 --platform linux/amd64
+docker pull elixirprotocol/validator:testnet-3 --platform linux/amd64
 ```
 
 Start the node
 
 ```
-docker run --env-file ./validator.env --platform linux/amd64 -p 17690:17690 elixirprotocol/validator:v3
+docker run --env-file ./validator.env --platform linux/amd64 -p 17690:17690 elixirprotocol/validator:testnet-3
 ```
 
 If you see NO CONFIGURATION ERRORS FOUND, then everything is successful.
 Now you can see your uptime on the testnet site. 
 
 ![image](https://github.com/user-attachments/assets/8f99bc3b-f1b3-4b7b-83cc-ece407287394)
+
+## Mainnet Node installation
+
+All commands below can be replaced by our installer. To do this, copy this command and follow the instructions.
+
+```
+curl -sO https://raw.githubusercontent.com/NodeMafia/ElixirTestnetNodeGuide/refs/heads/main/ElixirSetup.sh && chmod +x ElixirSetup.sh && ./ElixirSetup.sh
+```
+
+
+You connect to your server and test Docker. If it doesn't exist, install Docker
+
+```
+docker -version
+```
+
+Create a directory and navigate to it with the command
+
+```
+mkdir ElixirNode && cd ElixirNode
+```
+
+Before performing the following steps you will need the private key of your new wallet, the address of which we wrote in CUSTOM VALIDATOR!
+Create node configuration file (we need nano)
+
+```
+nano validator2.env
+```
+
+In the configuration file insert with replacement data without <>
+```
+ENV=prod
+
+STRATEGY_EXECUTOR_DISPLAY_NAME=<node_name>
+STRATEGY_EXECUTOR_BENEFICIARY=<wallet_address>
+SIGNER_PRIVATE_KEY=<private_key>
+```
+To save the configuration press CTRL+X, Y, Enter. 
+Install image Elixir node.
+
+```
+docker pull elixirprotocol/validator:v3 --platform linux/amd64
+```
+
+Start the node
+
+```
+docker run --env-file ./validator2.env --platform linux/amd64 elixirprotocol/validator:v3
+```
+
+If you see NO CONFIGURATION ERRORS FOUND, then everything is successful.
+Now you can see your uptime on the testnet site. 
+
 
 ## Updating the node
 ```
