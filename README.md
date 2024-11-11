@@ -1,4 +1,4 @@
-# Elixir TestNet (v3.5.5*updated) & Mainnet also
+# Elixir TestNet (v3.5.6*updated) & Mainnet also
 *Disclaimer: The author of this guide, which is exclusively informational material, does not bear any responsibility for the actions of readers. There are no fraudulent or spam links in the guide. All materials were obtained from official sources, links to which can be found at the end of each guide. This post is copyrighted by Nod Mafia.*
 
 ![image](https://github.com/user-attachments/assets/dc422a87-feb7-444c-a23c-e2fa23f5358c)
